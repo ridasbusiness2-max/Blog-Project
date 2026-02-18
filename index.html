@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        .about img, .story-card img {
+            display: block;
+            margin: 0 auto; 
+            max-width: 100%; 
+            height: auto;
+            border-radius: 10px; 
+        }
+        
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; 
+        }
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            filter: blur(4px); 
+            z-index: -1; 
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1; 
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.5); 
+            border-radius: 10px;
+            color: #fff;
+        }
+        .hero-content h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .hero-content p {
+            font-size: 1.2rem;
+            color: #ffeaa7;
+        }
+        
+        .contact {
+            padding: 4rem 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        .contact p {
+        margin-bottom: 2rem; 
+        }
+        .contact h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #fff;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        .contact label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #fff;
+            text-align: left;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact button {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: linear-gradient(45deg, #ff6b6b, #ffeaa7);
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .contact button:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Blog</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#stories">Recent Stories</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <video autoplay muted loop poster="images/stock2.jpg">
+            <source src="videos/stock.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1 id="typing-text"></h1>
+            <p>Welcome to my blog, where ideas come to life.</p>
+            <a href="#stories" class="cta-button">Explore Stories</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="images/alex.jpg" alt="My Profile Photo" style="width: 150px; margin-bottom: 1rem;">
+            <p>Hi there! I'm Alex, a passionate writer and lifelong learner with a knack for blending technology, personal growth, and adventure into everything I do. What started as a hobby—jotting down thoughts on my laptop during late-night travels—has evolved into this blog, where I share insights on the world around us. Whether it's the rapid advancements in AI reshaping our future, the simplicity of minimalist living, or budget-friendly hacks for exploring new places, I aim to make complex ideas accessible and inspiring.</p>
+            <p>My journey began in the tech world, where I spent years working with innovative tools and witnessing firsthand how digital changes can transform lives. But over time, I realized true fulfillment comes from balancing innovation with mindfulness—embracing less clutter in our physical spaces and more wonder in our experiences. That's why you'll find a mix of practical tips, personal stories, and thought-provoking discussions here. I believe in writing that's honest, relatable, and free from jargon, so anyone can dive in and feel empowered.</p>
+            <p>When I'm not writing, you might find me hiking in the mountains, experimenting with minimalist recipes, or geeking out over the latest AI developments. This blog is my way of connecting with fellow explorers, dreamers, and doers. If you're here for inspiration, a good laugh, or just a break from the daily grind, you've come to the right place. Feel free to reach out—let's chat about your favorite travel spot or the next big tech trend!</p>
+        </div>
+    </section>
+
+    <section id="stories" class="stories">
+        <div class="container">
+            <h2>Recent Stories</h2>
+            <div class="story-grid">
+                <article class="story-card">
+                    <img src="images/ai_content.jpg" alt="AI Thumbnail" style="width: 100%; height: 150px; object-fit: cover; margin-bottom: 1rem;">
+                    <h3>The Future of AI</h3>
+                    <p>Exploring how artificial intelligence is reshaping our world...</p>
+                    <a href="ai.html" class="read-more">Read More</a>
+                </article>
+                <article class="story-card">
+                    <img src="images/minimalist.jpg" alt="Minimalist Thumbnail" style="width: 100%; height: 150px; object-fit: cover; margin-bottom: 1rem;">
+                    <h3>Minimalist Living</h3>
+                    <p>Lessons from simplifying my life and finding joy in less...</p>
+                    <a href="minimalist.html" class="read-more">Read More</a>
+                </article>
+                <article class="story-card">
+                    <img src="images/travel.jpg" alt="Travel Thumbnail" style="width: 100%; height: 150px; object-fit: cover; margin-bottom: 1rem;">
+                    <h3>Travel Hacks</h3>
+                    <p>Top tips for budget-friendly adventures around the globe...</p>
+                    <a href="travel.html" class="read-more">Read More</a>
+                </article>
+                <article class="story-card">
+                    <img src="images/sustainable.jpg" alt="Sustainable Tech Thumbnail" style="width: 100%; height: 150px; object-fit: cover; margin-bottom: 1rem;">
+                    <h3>Sustainable Tech Innovations</h3>
+                    <p>How green technology is paving the way for a better future...</p>
+                    <a href="sustainable.html" class="read-more">Read More</a>
+                </article>
+                <article class="story-card">
+                    <img src="images/mindfulness.jpg" alt="Mindfulness Thumbnail" style="width: 100%; height: 150px; object-fit: cover; margin-bottom: 1rem;">
+                    <h3>Mindfulness in Daily Life</h3>
+                    <p>Simple practices to bring calm and focus to your everyday routine...</p>
+                    <a href="mindfulness.html" class="read-more">Read More</a>
+                </article>
+                <article class="story-card">
+                    <img src="images/hidden.jpg" alt="Hidden Gems Thumbnail" style="width: 100%; height: 150px; object-fit: cover; margin-bottom: 1rem;">
+                    <h3>Hidden Gems: Off-the-Beaten-Path Destinations</h3>
+                    <p>Discover lesser-known spots that offer unforgettable experiences...</p>
+                    <a href="hidden.html" class="read-more">Read More</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Have a question, feedback, or collaboration idea? Drop me a message!</p>
+            <form action="https://formspree.io/f/mqedlbyd" method="POST"> 
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 My Blog.Rida. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

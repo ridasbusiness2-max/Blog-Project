@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Tech Innovations - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #9c27b0 0%, #673ab7 50%, #3f51b5 100%);
+        }
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #9c27b0; 
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('images/sustainable.jpg') no-repeat center center/contain; 
+            filter: blur(4px); 
+            z-index: 0; 
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1; 
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.5); 
+            border-radius: 10px;
+            color: #fff;
+        }
+        .hero-content h1 {
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .hero-content p {
+            font-size: 1.5rem;
+            color: #ffeaa7;
+        }
+        .story-content {
+            padding-bottom: 4rem;
+        }
+        .story-content img {
+            display: block;
+            margin: 0 auto; 
+            max-width: 100%; 
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Blog</div>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#stories">Recent Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Sustainable Tech Innovations</h1>
+            <p>How green technology is paving the way for a better future.</p>
+        </div>
+    </section>
+
+    <section class="story-content">
+        <div class="container">
+            <article>
+                <br>
+                <p>Sustainability and technology are no longer opposing forces, they're merging to create innovations that protect our planet while advancing human progress. From renewable energy solutions to eco-friendly gadgets, the tech world is stepping up to combat climate change. In this post, we'll explore the latest breakthroughs and how they're shaping a greener tomorrow.</p>
+                <p>One of the most exciting areas is renewable energy tech, like solar panels that are more efficient and affordable than ever. Companies are developing smart grids that optimize energy use, reducing waste and carbon footprints. Imagine homes powered entirely by the sun, with AI managing consumption in real-time.</p>
+                <h3>Key Innovations</h3>
+                <br>
+                <p>Beyond energy, sustainable tech includes biodegradable electronics and apps that track your carbon footprint. Electric vehicles with longer ranges and faster charging are becoming mainstream, while ocean-cleaning drones tackle plastic pollution. These advancements aren't just futuristic—they're here now.</p>
+                <h3>Challenges and Opportunities</h3>
+                <br>
+                <p>While progress is rapid, challenges like high costs and resource mining persist. However, with global investments and consumer demand for eco-friendly products, the future looks bright. Tech can lead the way if we prioritize sustainability in design.</p>
+                <h3>Why It Matters</h3>
+                <br>
+                <p>Adopting sustainable tech isn't just good for the environment, it's smart business. It saves money, creates jobs, and ensures a livable planet for future generations. What sustainable innovation excites you most?</p>
+            </article>
+            <div style="margin-top: 4rem; text-align: center;">
+                <a href="index.html" class="cta-button">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 My Blog.Rida. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

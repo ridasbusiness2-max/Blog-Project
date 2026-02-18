@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindfulness in Daily Life - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #009688 0%, #4db6ac 50%, #80cbc4 100%); /* Teal gradient */
+        }
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #009688;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('images/mindfulness.jpg') no-repeat center center/contain; 
+            filter: blur(4px); 
+            z-index: 0; 
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1; 
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.5); 
+            border-radius: 10px;
+            color: #fff;
+        }
+        .hero-content h1 {
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .hero-content p {
+            font-size: 1.5rem;
+            color: #ffeaa7;
+        }
+        .story-content {
+            padding-bottom: 4rem;
+        }
+        .story-content img {
+            display: block;
+            margin: 0 auto; 
+            max-width: 100%; 
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Blog</div>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#stories">Recent Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Mindfulness in Daily Life</h1>
+            <p>Simple practices to bring calm and focus to your everyday routine.</p>
+        </div>
+    </section>
+
+    <section class="story-content">
+        <div class="container">
+            <article>
+                <br>
+                <p>In our fast-paced world, mindfulness offers a powerful antidote to stress and distraction. It's not about emptying your mind or meditating for hours—it's about being present in the moment. Through small, intentional practices, you can transform your daily life into one of greater peace and clarity.</p>
+                <p>Mindfulness has roots in ancient traditions, but modern science backs its benefits: reduced anxiety, improved focus, and better relationships. Whether you're a busy professional or a student, incorporating it can make a world of difference.</p>
+                <br>
+                <h3>Easy Practices to Start</h3>
+                <p>Begin with breathing exercises: Take 5 minutes a day to focus on your breath. Apps like Headspace can guide you. During meals, eat slowly and savor each bite—turn it into a mindful ritual. Walking? Leave your phone behind and notice the world around you.</p>
+                <br>
+                <h3>Overcoming Challenges</h3>
+                <p>Many struggle with wandering thoughts, that's normal! Gently redirect your focus. Start small to build habits, and be patient with yourself. Mindfulness is a skill that grows with practice.</p>
+                <br>
+                <h3>Benefits Beyond the Mat</h3>
+                <p>Beyond relaxation, mindfulness enhances decision-making and empathy. It's helped me navigate tough days and appreciate simple joys. Ready to try? Pick one practice today and see how it feels.</p>
+            </article>
+            <div style="margin-top: 4rem; text-align: center;">
+                <a href="index.html" class="cta-button">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 My Blog.Rida. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

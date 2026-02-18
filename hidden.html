@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Gems: Off-the-Beaten-Path Destinations - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffc107 0%, #ffeb3b 50%, #fff176 100%); 
+        }
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffc107;
+        } 
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('images/hidden.jpg') no-repeat center center/contain; 
+            filter: blur(4px); 
+            z-index: 0; 
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1; 
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.5); 
+            border-radius: 10px;
+            color: #fff;
+        }
+        .hero-content h1 {
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .hero-content p {
+            font-size: 1.5rem;
+            color: #ffeaa7;
+        }
+        .story-content {
+            padding-bottom: 4rem;
+        }
+        .story-content img {
+            display: block;
+            margin: 0 auto; 
+            max-width: 100%; 
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Blog</div>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#stories">Recent Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hidden Gems: Off-the-Beaten-Path Destinations</h1>
+            <p>Discover lesser-known spots that offer unforgettable experiences.</p>
+        </div>
+    </section>
+
+    <section class="story-content">
+        <div class="container">
+            <article>
+                <br>
+                <p>Travel isn't just about crowded landmarks, it's about discovering hidden gems that locals cherish. These off-the-beaten-path destinations offer authentic experiences, stunning beauty, and a break from the tourist rush. From secluded beaches to quaint villages, let's uncover some treasures that deserve your next adventure.</p>
+                <p>I've spent years exploring, and these spots have become my favorites. They're not in guidebooks, but they're worth the detour. Whether you're seeking nature, culture, or relaxation, there's something for everyone.</p>
+                <br>
+                <h3>Top Hidden Gems</h3>
+                <br>
+                <ul>
+                    <li><strong>Blue Lagoon, Iceland:</strong> A geothermal spa away from the crowds, with milky blue waters and volcanic landscapes.</li>
+                    <li><strong>Gibraltar Point, Lincolnshire, UK:</strong> A peaceful nature reserve with dunes, birds, and a lighthouse, perfect for birdwatching.</li>
+                    <li><strong>Chefchaouen, Morocco:</strong> A blue-washed mountain town with winding alleys, artisan markets, and breathtaking views.</li>
+                </ul>
+                <br>
+                <h3>Tips for Finding Your Own</h3>
+                <p>Talk to locals, use apps like AllTrails for hikes, or explore Google Maps for unmarked trails. Remember to travel responsibly, leave no trace and support local economies.</p>
+                <br>
+                <h3>Why Go Off the Path?</h3>
+                <p>These places offer deeper connections and memories that last. Skip the lines and embrace the unknown. What's your dream hidden destination?</p>
+            </article>
+            <div style="margin-top: 4rem; text-align: center;">
+                <a href="index.html" class="cta-button">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 My Blog.Rida. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

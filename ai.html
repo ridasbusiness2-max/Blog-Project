@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Future of AI - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+        background: linear-gradient(135deg, #4a90e2 0%, #357abd 50%, #1e3a8a 100%); /* Blue gradient */
+    }
+    .hero {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden; 
+    }
+    p {
+        text-align: start;
+    }
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('images/ai_content.jpg') no-repeat center center/contain; 
+        filter: blur(3px); 
+        z-index: -1; 
+    }
+    .hero-content {
+        text-align: center;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.1); 
+        border-radius: 10px;
+        z-index: 1; 
+    }
+    .hero-content h1 {
+        font-size: 3.5rem;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    .hero-content p {
+        font-size: 1.5rem;
+        color: #ffeaa7;
+    }
+    .story-content {
+        padding-bottom: 4rem;
+    }
+</style>
+
+   
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Blog</div>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#stories">Recent Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>The Future of AI</h1>
+            <p>Exploring how artificial intelligence is reshaping our world.</p>
+        </div>
+    </section>
+
+    <section class="story-content">
+        <div class="container">
+            <article>
+                <br>
+                <p>Artificial Intelligence (AI) is no longer just a buzzword, it's transforming industries, daily life, and even our understanding of creativity. From self-driving cars to personalized recommendations on streaming platforms, AI is everywhere. But what does the future hold?</p>
+                <p>In this post, we'll dive into the latest advancements, ethical concerns, and what we can expect in the coming years. AI's potential is limitless, but so are the challenges we must address to harness it responsibly.</p>
+                <br>
+                <h3>Key Advancements</h3>
+                <p>Recent breakthroughs in machine learning, like GPT models and neural networks, have made AI more intuitive. Imagine AI assistants that not only answer questions but predict your needs before you even ask. In healthcare, AI is diagnosing diseases faster than ever, while in education, it's tailoring lessons to individual learning styles.</p>
+                <br>
+                <h3>Ethical Considerations</h3>
+                <p>With great power comes great responsibility. Issues like data privacy, job displacement, and bias in algorithms are hot topics. We need global regulations to ensure AI benefits everyone, not just a few corporations.</p>
+                <br>
+                <h3>Looking Ahead</h3>
+                <p>The future might include AI in creative fields, like generating art or music, or even in space exploration. But remember, AI is a tool—it's up to us to guide its development.</p>
+                <p>What are your thoughts on AI? Drop a comment below!</p>
+            </article>
+            <div style="margin-top: 4rem; text-align: center;">
+                <a href="index.html" class="cta-button">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 My Blog.Rida. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

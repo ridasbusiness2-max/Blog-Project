@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Living - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+        background: linear-gradient(135deg, #B26969 0%, #D27070 50%, #34079E 100%); 
+    }
+    .hero {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden; 
+    }
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('images/minimalist.jpg') no-repeat center center/contain; 
+        filter: blur(3px);
+        z-index: -1; 
+    }
+    .hero-content {
+        text-align: center;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.1); 
+        border-radius: 10px;
+        z-index: 1; 
+    }
+    .hero-content h1 {
+        font-size: 3.5rem;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    .hero-content p {
+        font-size: 1.5rem;
+        color: #ffeaa7;
+    }
+    .story-content {
+        padding-bottom: 4rem;
+    }
+</style>
+
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Blog</div>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#stories">Recent Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Minimalist Living</h1>
+            <p>Lessons from simplifying my life and finding joy in less.</p>
+        </div>
+    </section>
+
+    <section class="story-content">
+        <div class="container">
+            <article>
+                <br>
+                <p>Minimalism isn't just about decluttering, it's a mindset that frees you from the noise of modern life. After downsizing my possessions and focusing on what truly matters, I discovered a deeper sense of peace and purpose.</p>
+                <p>In this post, I'll share my journey, practical tips, and the unexpected benefits of living with less.</p>
+                <br>
+                <h3>My Journey to Minimalism</h3>
+                <p>It started with a closet full of unused clothes. I challenged myself to keep only what I loved and used regularly. Soon, it spread to my digital life, unsubscribing from emails and deleting apps. The result? More time, less stress.</p>
+                <br>
+                <h3>Practical Tips</h3>
+                <ul>
+                    <li>Start small: Tackle one room or category at a time.</li>
+                    <li>Ask yourself: Does this spark joy? (Inspired by Marie Kondo)</li>
+                    <li>Embrace experiences over things, travel light and live fully.</li>
+                </ul>
+                <br>
+                <h3>Benefits</h3>
+                <p>Beyond a tidy space, minimalism boosts mental clarity, saves money, and reduces environmental impact. It's not about deprivation; it's about abundance in simplicity.</p>
+                <p>Ready to simplify? Start today!</p>
+            </article>
+            <div style="margin-top: 4rem; text-align: center;"> 
+                <a href="index.html" class="cta-button">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 My Blog.Rida. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
